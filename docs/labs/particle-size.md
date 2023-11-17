@@ -42,7 +42,7 @@ The scattering pattern dictates the sensor arrangement:
 - The dispersion bath incorporates a stirrer and an ultrasonic sonicator.
 - The dispersed suspension is delivered to the flow cell by a pump.
 
-## Measurement
+## Measurements
 
 <figure markdown>
   ![Measurement workflow](../img/particle-size-lab/sald7101-workflow.png)
@@ -61,4 +61,4 @@ For the most precise measurements, the particles should be:
 
 Another limitation is that the algorithms used in laser diffraction analysis seem to be proprietary and may differ between the setups.
 
-[^1]: in fact, the text and the pictures here are mostly from Shimadzu brochure and operation manual
+[^1]: the text and the pictures here are mostly from the [Shimadzu](https://www.shimadzu.com/) brochure and operation manual

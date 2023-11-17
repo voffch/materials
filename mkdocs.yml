@@ -2,7 +2,13 @@ site_name: "Materials: synthesis and stuff"
 nav:
   - Home: 'index.md'
   - 'Labs':
-    - 'Particle Size': 'labs/particle-size-lab.md'
+    - 'Cobalt Preparation': 'labs/co-preparation.md'
+    #- 'Glycerol-nitrate Synthesis': 'labs/glycerol-nitrate.md'
+    - 'Powder Pressing': 'labs/pressing.md'
+    - 'Particle Size Analysis': 'labs/particle-size.md'
+    - 'SEM Sample Preparation': 'labs/sem-sample-preparation.md'
+    - 'Dilatometry': 'labs/dilatometry.md'
+    - 'Thermogravimetry': 'labs/thermogravimetry.md'
   - About: 'about.md'
 theme:
   name: material
@@ -27,7 +33,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tracking
+    #- navigation.tracking
     - navigation.expand
     #- navigation.instant
     #- navigation.instant.progress
