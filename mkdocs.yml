@@ -9,6 +9,7 @@ nav:
     - 'SEM Sample Preparation': 'labs/sem-sample-preparation.md'
     - 'Dilatometry': 'labs/dilatometry.md'
     - 'Thermogravimetry': 'labs/thermogravimetry.md'
+  - Origami Packets: 'origami.md'
   - About: 'about.md'
 theme:
   name: material
