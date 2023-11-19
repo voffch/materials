@@ -44,4 +44,6 @@ where $a$ is either the total height or the total width of the finished square p
 
 The equations above are approximate: they do not take into account the amount of paper that goes into creases and folds.
 
+And, once you grasp the basics of how the square packets are made, it should be easy for you to modify the original procedure so as to make, for example, wide rectangular ones.
+
 [^1]: please don't judge the images too harshly: it's the first time I'm making an origami diagram, and maybe the second time in my life I'm using [Inkscape](https://inkscape.org/)

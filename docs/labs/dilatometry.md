@@ -89,7 +89,7 @@ $\alpha _m$ is also known as the "technical TEC" for its technological significa
 
 > *thermal expansivity (instantaneous coeffıcient of thermal expansion)*, $\alpha _L$, identical to the above, except that the derivative replaces the finite differences of Equation $\ref{techTEC}$. The thermal expansivity is related to the length change for an infinitesimally narrow temperature range, at any temperature $T$ (essentially a “tangent” point)
 
-$$\alpha _L = \frac{1}{L} \left( \frac{\partial L}{\partial T} \right)_P  \label{physTEC}$$
+$$\alpha _L = \frac{1}{L} \left( \frac{\partial L}{\partial T} \right)_p  \label{physTEC}$$
 
 $\alpha _L$ is also known as the "physical TEC".[^8]
 
@@ -98,7 +98,7 @@ What trends can we expect of the values of $\varepsilon$ and $\alpha$? How do th
 $$\alpha _V (T) = \frac{1}{V} \left( \frac{\partial V}{\partial T} \right)_P = \gamma \frac{C_V}{V_m}\chi _T$$
 
 where $V_m$, $C_V$, and $\chi _T$ are the molar volume, the heat capacity at constant volume, and the isothermal compressibility, respectively.
-Now, $\chi _T$ and $V_m$ for solids weakly depend on temperature; $\gamma$ is also almost temperature-independent (especially at $T$ well above the Debye temperature), and $C_V(𝑇)$ is rather flat at high temperatures.
+Now, $\chi _T$ and $V_m$ for solids weakly depend on temperature; $\gamma$ is also almost temperature-independent (especially at $T$ well above the Debye temperature), and $C_V(T)$ is rather flat at high temperatures.
 All of it means that in many simple (thermal-expansion-only) cases $\varepsilon$ is almost linear and $\alpha$ can be treated as a constant. This is the case, for instance, for the thermal expansion of sintered zirconia (red line in the figure above). In a very wide temperature range, however, some temperature dependence of TEC is anticipated (see the figure below).
 
 <figure markdown>
@@ -141,15 +141,45 @@ we can expect the first- and second-order phase transitions to be seen on the $\
 
 #### Oxygen/water exchange
 
+There are two phenomena that often manifest on dilatometric curves of nonstoichiometric complex oxides. Both of them, oxygen exchange and water exchange, are related to the equilibria between the sample and the components of the surrounding gas atmosphere. Due to the fact that these phenomena result from the changes in the *chemical composition* (oxygen content or water content in the crystal lattice of the oxides), the associated changes in linear dimensions and volume are called *chemical expansion*.
+
 **TO BE WRITTEN**
 
-You can find out more about chemical expansion (expansion due to the change in the chemical composition via substitution, oxygen exchange or hydration) in oxides and its measurement in the corresponding references.[^10] [^11] [^12]
+You can find out more about chemical expansion (expansion due to the change in the chemical composition via substitution, oxygen exchange or hydration) in oxides and its measurement in the corresponding literature.[^10] [^11] [^12]
 
 ## Measurements
 
 ### Equipment
 
-**TO BE WRITTEN**
+In this lab, we're using Netzsch DIL 402 PC, which is a horizontal push-rod dilatometer. In the following figure,[^13] it is shown with the movable oven slid all the way to the right, giving access to the sample holder.
+
+<figure markdown>
+  ![Netzsch DIL 402](../img/dilatometry-lab/netzsch-dil402-overview.jpg)
+  <figcaption>Netzsch DIL 402: external view</figcaption>
+</figure>
+
+The furnace uses SiC heating element and a separate thermocouple near the heater for more precise temperature control. The protective gas-tight alumina tube allows different atmospheres to be used during the measurements.
+
+<figure markdown>
+  ![Netzsch DIL 402 oven](../img/dilatometry-lab/netzsch-dil402-oven.jpg){ width="400" }
+  <figcaption>Netzsch DIL 402 high-temperature oven</figcaption>
+</figure>
+
+The working principle of all push-rod dilatometers is similar. The sample is placed inside the sample holder, which is usually a tube made of fused silica or, for higher-temperature applications, high-purity alumina. The sample is firmly held between the holder and a movable spring-loaded pushrod, which exerts very small pressure on the sample (the load is below 50 cN).
+
+<figure markdown>
+  ![Netzsch DIL 402 sample holder](../img/dilatometry-lab/netzsch-dil402-sample-holder.jpg){ width="600" }
+  <figcaption>Netzsch DIL 402 sample holder</figcaption>
+</figure>
+
+The sample holder with the sample inside is inserted into the oven that heats up the sample. The corresponding changes in the sample length are transmitted, via the pushrod, to the length sensor, or displacement transduser. In Netzsch DIL 402 as in many other dilatometers the transducer is inductive (linear variable differential transformer, or [LVDT](https://en.wikipedia.org/wiki/Linear_variable_differential_transformer)), although different optical sensors are becoming quite popular. The length changes measured by the transducer are recorded along with the temperature, which is measured with a thermocouple placed very close to the sample.
+
+The main parts of the dilatometer are shown in the figure below. Please note that the temperature inside the chamber with the sensor is maintained by an external circulating thermostat (not shown).
+
+<figure markdown>
+  ![Netzsch DIL 402 schematic](../img/dilatometry-lab/netzsch-dil402-schematic.jpg)
+  <figcaption>Netzsch DIL 402 schematic</figcaption>
+</figure>
 
 ### Procedure
 
@@ -161,7 +191,7 @@ In turn, to avoid the shrinkages caused by sintering, thermal expansion is inves
 
 ## Interpretation
 
-Dilatometry is a non-specific method. Its results tell that something, which is accompanied by noticeable length/volume changes, happens in certain conditions ($T$, $P$). The results don’t tell what that something is. The dilatometry results are interpreted based on experience (you may know what usually happens with similar compounds at similar conditions) and additional experiments ([thermogravimetry](./thermogravimetry.md), X-ray diffraction, etc.).
+Dilatometry is a non-specific method. Its results tell that something, which is accompanied by noticeable length/volume changes, happens in certain conditions ($T$, $p$). The results don’t tell what that something is. The dilatometry results are interpreted based on experience (you may know what usually happens with similar compounds at similar conditions) and additional experiments ([thermogravimetry](./thermogravimetry.md), X-ray diffraction, etc.).
 
 [^1]: IUPAC Gold Book definition, [https://doi.org/10.1351/goldbook.T06314](https://doi.org/10.1351/goldbook.T06314)
 [^2]: ASTM E228-22 "Standard Test Method for Linear Thermal Expansion of Solid Materials With a Push-Rod Dilatometer", [https://doi.org/10.1520/E0228-22](https://doi.org/10.1520/E0228-22)
@@ -182,6 +212,7 @@ Dilatometry is a non-specific method. Its results tell that something, which is 
 [^10]: V.V. Sereda, D.S. Tsvetkov, I.L. Ivanov, A.Yu. Zuev, Interplay between chemical strain, defects and ordering in Sr1-xLaxFeO3 materials, Acta Materialia, 162, 2019, 33-45, [https://doi.org/10.1016/j.actamat.2018.09.051](https://doi.org/10.1016/j.actamat.2018.09.051)
 [^11]: Vladimir V. Sereda, Dmitry S. Tsvetkov, Dmitry A. Malyshkin, Ivan L. Ivanov, Anton L. Sednev-Lugovets, Andrey Yu. Zuev, Hydration-induced chemical expansion of BaCa(1+y)/3Nb(2−y)/3O3−δ∙xH2O (BCN) and other proton-conducting perovskite oxides, Solid State Ionics, 358, 2020, 115516, [https://doi.org/10.1016/j.ssi.2020.115516](https://doi.org/10.1016/j.ssi.2020.115516)
 [^12]: 
-    Zuev A.Y., Tsvetkov D.S. (2017). Conventional Methods for Measurements of Chemo-Mechanical Coupling. In: Bishop, S., Perry, N., Marrocchelli, D., Sheldon, B. (eds) Electro-Chemo-Mechanics of Solids. Electronic Materials: Science & Technology. Springer, Cham. [https://doi.org/10.1007/978-3-319-51407-9_2](https://doi.org/10.1039/D1TA08407K)
+    Zuev A.Y., Tsvetkov D.S. (2017). Conventional Methods for Measurements of Chemo-Mechanical Coupling. In: Bishop, S., Perry, N., Marrocchelli, D., Sheldon, B. (eds) Electro-Chemo-Mechanics of Solids. Electronic Materials: Science & Technology. Springer, Cham. [https://doi.org/10.1007/978-3-319-51407-9_2](https://doi.org/10.1007/978-3-319-51407-9_2)
 
     Tsvetkov D.S., Sereda V.V., Malyshkin D.A., Ivanov I.L., Zuev A.Y. Chemical lattice strain in nonstoichiometric oxides: an overview. Journal of Materials Chemistry A. 2022;10(12):6351-75. [https://doi.org/10.1039/D1TA08407K](https://doi.org/10.1039/D1TA08407K)
+[^13]: The figures in this section are from the Netzsch DIL 409 operation manual.
