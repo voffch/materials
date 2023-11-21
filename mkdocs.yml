@@ -3,7 +3,7 @@ nav:
   - Home: 'index.md'
   - 'Labs':
     - 'Cobalt Preparation': 'labs/co-preparation.md'
-    - 'Glycerol-nitrate Synthesis': 'labs/glycerol-nitrate.md'
+    - 'Glycerol-Nitrate Synthesis': 'labs/glycerol-nitrate.md'
     - 'Powder Pressing': 'labs/pressing.md'
     - 'Particle Size Analysis': 'labs/particle-size.md'
     - 'SEM Sample Preparation': 'labs/sem-sample-preparation.md'

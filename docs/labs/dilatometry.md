@@ -141,17 +141,43 @@ we can expect the first- and second-order phase transitions to be seen on the $\
 
 #### Oxygen/water exchange
 
-There are two phenomena that often manifest on dilatometric curves of nonstoichiometric complex oxides. Both of them, oxygen exchange and water exchange, are related to the equilibria between the sample and the components of the surrounding gas atmosphere. Due to the fact that these phenomena result from the changes in the *chemical composition* (oxygen content or water content in the crystal lattice of the oxides), the associated changes in linear dimensions and volume are called *chemical expansion*.
+There are two phenomena that often manifest on dilatometric curves of nonstoichiometric complex oxides. Both of them, oxygen exchange and water exchange, are related to the equilibria between the sample and the components of the surrounding gas atmosphere. Due to the fact that these phenomena result from the changes in the *chemical composition* (oxygen content or water content in the crystal lattice of the oxides), the associated changes in linear dimensions and volume are called *chemical expansion*. Let us now consider the possible origins of chemical expansion and how it appears on dilatometric curves in the simpler cases.
 
-**TO BE WRITTEN**
+The process of reduction (i.e., oxygen loss) upon heating for many oxides can be written, in Kröger-Vink notation, as
 
-You can find out more about chemical expansion (expansion due to the change in the chemical composition via substitution, oxygen exchange or hydration) in oxides and its measurement in the corresponding literature.[^10] [^11] [^12]
+$$\ce{O^{\times}_O + 2M^{\bullet}_M <=> \frac{1}{2}O_2 + V^{\bullet \bullet}_O + 2M^{\times}_M},$$
+
+where metals that can change their oxidation state can act as $\ce{M}$ (e.g., $\ce{Co}$, $\ce{Fe}$). It is seen that the oxygen release is accompanied by the oxygen vacancy formation and the reduction of the metal cations. Both, especially the latter, can influence the size of the crystal lattice through the change in the size of the nodes in it. For instance, cations with lower oxidation state are larger,[^10] and so the reduction of the cations contributes to expansion.
+
+In the figure below, following the first-order phase transition at 275 °C, you can see a pronounced upward trend in the dilatometric curve. This deviation from expected more or less linear expansion is due to oxygen release.
+
+<figure markdown>
+  ![Reduction chemical expansion](../img/dilatometry-lab/SF-reduction-dil.png){ width="450" }
+  <figcaption markdown>Reduction-induced chemical expansion example: red arrow shows the deviation due to oxygen release[^11]</figcaption>
+</figure>
+
+Please note that usually chemical expansion is not associated with any phase transitions, so the occurrence of the phase transition in this case is purely coincidental.
+
+In turn, hydration, which is observed only in some nonstoichiometric oxides (in a small fraction of them, in fact), can be expressed as
+
+$$\ce{O^{\times}_O + V^{\bullet \bullet}_O + H2O <=> 2OH^{\bullet}_O}.$$
+
+The origins of this phenomenon are less clear,[^13] but they are also, undoubtedly, related to the defect chemistry and to different defect species present in hydrated and dehydrated crystal lattices of oxides, respectively. In the figure below you see how the length of the sample may change in the temperature region in which the hydrated oxide actively loses lattice water (200-600 °C, blue line). Thus, water uptake contributes to expansion, and its release causes shrinkage.
+
+<figure markdown>
+  ![Hydration chemical expansion](../img/dilatometry-lab/BCN50-hydration-dil.png){ width="450" }
+  <figcaption markdown>Hydration-induced chemical expansion example: the black arrow shows the difference between the dilatometric curves measured in wet and dry air; the red curve corresponds to the sample annealed in dry air (dehydrated)[^12]</figcaption>
+</figure>
+
+You can find out more about chemical expansion (expansion due to the change in the chemical composition via substitution, oxygen exchange or hydration) in oxides and its measurement in the corresponding literature.[^13]
+
+And, of course, in order to definitely attribute the anomalies observed in the dilatometric experiments to any physical phenomena, be it phase transitions or chemical expansion, you always need to support your claims with the results obtained by other methods, such as [thermogravimetric analysis](./thermogravimetry.md), X-ray diffraction, etc.
 
 ## Measurements
 
 ### Equipment
 
-In this lab, we're using Netzsch DIL 402 PC, which is a horizontal push-rod dilatometer. In the following figure,[^13] it is shown with the movable oven slid all the way to the right, giving access to the sample holder.
+In this lab, we're using Netzsch DIL 402 PC, which is a horizontal push-rod dilatometer. In the following figure,[^14] it is shown with the movable oven slid all the way to the right, giving access to the sample holder.
 
 <figure markdown>
   ![Netzsch DIL 402](../img/dilatometry-lab/netzsch-dil402-overview.jpg)
@@ -165,7 +191,7 @@ The furnace uses SiC heating element and a separate thermocouple near the heater
   <figcaption>Netzsch DIL 402 high-temperature oven</figcaption>
 </figure>
 
-The working principle of all push-rod dilatometers is similar. The sample is placed inside the sample holder, which is usually a tube made of fused silica or, for higher-temperature applications, high-purity alumina. The sample is firmly held between the holder and a movable spring-loaded pushrod, which exerts very small pressure on the sample (the load is below 50 cN).
+The working principle of all push-rod dilatometers is similar. The sample is placed inside the sample holder, which is usually a tube made of fused silica or, for higher-temperature applications, high-purity alumina (or even graphite or tungsten for extreme temperatures). The sample is firmly held between the holder and a movable spring-loaded pushrod, which exerts very small pressure on the sample (the load is below 50 cN).
 
 <figure markdown>
   ![Netzsch DIL 402 sample holder](../img/dilatometry-lab/netzsch-dil402-sample-holder.jpg){ width="600" }
@@ -174,6 +200,11 @@ The working principle of all push-rod dilatometers is similar. The sample is pla
 
 The sample holder with the sample inside is inserted into the oven that heats up the sample. The corresponding changes in the sample length are transmitted, via the pushrod, to the length sensor, or displacement transduser. In Netzsch DIL 402 as in many other dilatometers the transducer is inductive (linear variable differential transformer, or [LVDT](https://en.wikipedia.org/wiki/Linear_variable_differential_transformer)), although different optical sensors are becoming quite popular. The length changes measured by the transducer are recorded along with the temperature, which is measured with a thermocouple placed very close to the sample.
 
+<figure markdown>
+  ![Netzsch DIL 402 sample and thermocouple](../img/dilatometry-lab/netzsch-dil402-sample-and-thermocouple.jpg){width="400"}
+  <figcaption>Sample thermocouple positioning</figcaption>
+</figure>
+
 The main parts of the dilatometer are shown in the figure below. Please note that the temperature inside the chamber with the sensor is maintained by an external circulating thermostat (not shown).
 
 <figure markdown>
@@ -181,13 +212,53 @@ The main parts of the dilatometer are shown in the figure below. Please note tha
   <figcaption>Netzsch DIL 402 schematic</figcaption>
 </figure>
 
+### Correction
+
+Because both the sample and the sample holder are heated in the oven, exhibiting thermal expansion, push-rod dilatometers always measure the difference in expansion between the specimen and the portion of the sample holder that is positioned parallel to it. Hence, the correction is needed to calculate the real expansion of the sample. The corresponding procedure is fairly standard.[^2] In a correction experiment, which is performed with a sample made of reference material with known thermal expansion, $\left( \Delta L / L_0 \right)_\mathrm{ref} = f(T)$, the temperature-dependent correction coefficient $A$ is found:
+
+$$A = \left( \frac{\Delta L}{L_0} \right)_\mathrm{ref} - \left( \frac{\Delta L}{L_0} \right)_\mathrm{meas} \label{dilcorr}$$
+
+High-purity platinum, tungsten, copper, alumina or quartz are among the commonly used reference materials.
+
+In the subsequent measurements, corrected thermal expansion is calculated from the measurement results as
+
+$$\left( \frac{\Delta L}{L_0} \right)_\mathrm{corr} = \left( \frac{\Delta L}{L_0} \right)_\mathrm{meas} + A. \label{dilmeas}$$
+
+In most cases, such calculations can be done automatically in the dilatometric data analysis software.
+
+The lengths of the standard (reference) and the measured samples should be as close as possible. The conditions in both the measurement and the correction experiments should be the same, including the temperature change rates, dwell times, sweep gas compositions and flow rates, etc. All these variable parameters influence, to some extent, the small but inevitable temperature lags and temperature gradients along and across the measurement cell. It should be clear that these thermal effects should be equal in the respective measurements to be able to use Equations $\ref{dilcorr}$-$\ref{dilmeas}$.
+
 ### Procedure
 
-**TO BE WRITTEN**
+We consider here only the sample measurements because the correction measurement procedures would be exactly the same.
 
-The samples taken for the sintering measurements are usually pre-compacted powders (i.e., pellets made by [uniaxial pressing](./pressing.md)), sometimes called "green compacts" or "green bodies". Due to the relatively high shrinkage in the process, the green pellet length is usually not very high (several mm) to prevent exceeding the measurement range of the dilatometric sensor.
+The samples taken for the sintering measurements are usually pre-compacted powders (e.g., pellets made by [uniaxial pressing](./pressing.md)), sometimes called "green compacts" or "green bodies". Due to the relatively high shrinkage in the process, the green pellet length is usually not very high (several mm) to prevent exceeding the measurement range of the dilatometric sensor.
 
 In turn, to avoid the shrinkages caused by sintering, thermal expansion is investigated using pre-sintered ceramic samples, most often shaped as bars, cylinders or pellets.
+
+Regardless of the particular shape of the sample, there is one requirement that all dilatometric samples must meet. As seen in the figure below, the sample within the sample holder rests on the supports while being pushed against the holder by the pushrod.
+
+<figure markdown>
+  ![Netzsch DIL 402 sample in holder](../img/dilatometry-lab/netzsch-dil402-sample-in-sample-holder.jpg){width="400"}
+  <figcaption>Sample inside the sample holder</figcaption>
+</figure>
+
+Hence, *the opposite sides* of the sample that are in contact with the pushrod and the "base" of the holder (formed by a removable slide) *must be flat and parallel*. Because of this, the actual measurement procedure starts with the preparation of the sample.
+
+1. If the opposite sides of the sample are not flat and parallel, prepare the sample accordingly by mechanical means (diamond cutting wheels, grinding tools, small files, sandpaper, etc.).
+2. When the sample is ready, measure its length with a micrometer.
+3. Open the dilatometer by sliding the oven all the way to the right after loosening the retaining nut on the protective tube.
+4. Retract the pushrod using the buttons on the base plate of the dilatometer.
+5. Position the sample onto the alumina supports inside the sample holder.
+6. Insert the pushrod, bringing it in contact with the sample. To prevent the interaction between the sample, the pushrod and the sample holder parts, use spacers as shown:
+    ![Netzsch DIL 402 sample between spacers](../img/dilatometry-lab/netzsch-dil402-sample-between-spacers.jpg){width="300"}
+    
+    You may need to hold the leftmost spacer with tweezers while sliding the pushrod.
+
+7. As the pushrod is somewhat movable, small adjustments to its position as well as the positions of the sample and the spacers can be made at this time.
+8. Slide the furnace to the left and tighten the retaining nut, which will compress the O-ring inside and seal the internal space of the dilatometer.
+9. Now you should set the experiment parameters, including the name of the sample, the initial length, the temperature program, the sweep gases, and so on. All of it is done in the software.
+10. Depending on the gas atmosphere used for the measurements, you may need to wash the dilatometer with the working gas before starting the experiment.
 
 ## Interpretation
 
@@ -209,10 +280,11 @@ Dilatometry is a non-specific method. Its results tell that something, which is 
 [^7]: ...only some equations are not quite correct. What, for instance, exactly is $\left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_T$ ?
 [^8]: Equation $\ref{physTEC}$ is written here in a "strict" way. However, in some sources, including ASTM E228-22 (ref. 2) and the Netzsch manuals, $\alpha _L$ is defined as $\alpha _L = \frac{1}{L_0} \left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_P$ with $L_0$ instead of $L$. This is mostly done for simplicity and because for any reasonable $L_0$ and $\Delta L$ values in typical dilatometric experiments the error introduced by replacing $L$ with $L_0$ would be negligible.
 [^9]: S. Touloukian Y, K. Kirby R, R. Taylor E, Y. R. Lee T. Thermophysical Properties of Matter - the TPRC Data Series. Volume 13. Thermal Expansion - Nonmetallic Solids. New York: IFI/Plenum Data Company; 1977. [https://apps.dtic.mil/sti/citations/ADA129116](https://apps.dtic.mil/sti/citations/ADA129116)
-[^10]: V.V. Sereda, D.S. Tsvetkov, I.L. Ivanov, A.Yu. Zuev, Interplay between chemical strain, defects and ordering in Sr1-xLaxFeO3 materials, Acta Materialia, 162, 2019, 33-45, [https://doi.org/10.1016/j.actamat.2018.09.051](https://doi.org/10.1016/j.actamat.2018.09.051)
-[^11]: Vladimir V. Sereda, Dmitry S. Tsvetkov, Dmitry A. Malyshkin, Ivan L. Ivanov, Anton L. Sednev-Lugovets, Andrey Yu. Zuev, Hydration-induced chemical expansion of BaCa(1+y)/3Nb(2−y)/3O3−δ∙xH2O (BCN) and other proton-conducting perovskite oxides, Solid State Ionics, 358, 2020, 115516, [https://doi.org/10.1016/j.ssi.2020.115516](https://doi.org/10.1016/j.ssi.2020.115516)
-[^12]: 
+[^10]: Shannon R. Revised effective ionic radii and systematic studies of interatomic distances in halides and chalcogenides. Acta Crystallographica Section A. 1976;32(5):751-67. [https://doi.org/10.1107/S0567739476001551](https://doi.org/10.1107/S0567739476001551). See also [http://abulafia.mt.ic.ac.uk/shannon/ptable.php](http://abulafia.mt.ic.ac.uk/shannon/ptable.php)
+[^11]: V.V. Sereda, D.S. Tsvetkov, I.L. Ivanov, A.Yu. Zuev, Interplay between chemical strain, defects and ordering in Sr1-xLaxFeO3 materials, Acta Materialia, 162, 2019, 33-45, [https://doi.org/10.1016/j.actamat.2018.09.051](https://doi.org/10.1016/j.actamat.2018.09.051)
+[^12]: Vladimir V. Sereda, Dmitry S. Tsvetkov, Dmitry A. Malyshkin, Ivan L. Ivanov, Anton L. Sednev-Lugovets, Andrey Yu. Zuev, Hydration-induced chemical expansion of BaCa(1+y)/3Nb(2−y)/3O3−δ∙xH2O (BCN) and other proton-conducting perovskite oxides, Solid State Ionics, 358, 2020, 115516, [https://doi.org/10.1016/j.ssi.2020.115516](https://doi.org/10.1016/j.ssi.2020.115516)
+[^13]: 
     Zuev A.Y., Tsvetkov D.S. (2017). Conventional Methods for Measurements of Chemo-Mechanical Coupling. In: Bishop, S., Perry, N., Marrocchelli, D., Sheldon, B. (eds) Electro-Chemo-Mechanics of Solids. Electronic Materials: Science & Technology. Springer, Cham. [https://doi.org/10.1007/978-3-319-51407-9_2](https://doi.org/10.1007/978-3-319-51407-9_2)
 
     Tsvetkov D.S., Sereda V.V., Malyshkin D.A., Ivanov I.L., Zuev A.Y. Chemical lattice strain in nonstoichiometric oxides: an overview. Journal of Materials Chemistry A. 2022;10(12):6351-75. [https://doi.org/10.1039/D1TA08407K](https://doi.org/10.1039/D1TA08407K)
-[^13]: The figures in this section are from the Netzsch DIL 409 operation manual.
+[^14]: The figures in this section are from the Netzsch DIL 409 operation manual.

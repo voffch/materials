@@ -46,6 +46,10 @@ The situation may be further complicated by the heat transfer issues.[^3] At low
 
 As a consequence, it is quite hard to calculate the buoyancy corrections accurately from purely theoretical considerations. Instead, it is preferred to run the blank measurements in exactly the same conditions as in the actual measurements, including the gas compositions, flow rates and pressures, and the temperature program. Such kind of correction may even compensate for the issues not caused by buoyancy, e.g., variations in the convective gas flows exerting different pressure on the measurement crucible, the parasitic radiative heating of the balance by the oven at high temperatures, or some other less evident phenomena. In addition, to make the buoyancy similar in the blank and measurement experiments, it is customary to perform the former not with the empty crucible, but with the crucible filled with inert substance such as $\ce{Al2O3}$. This is especially important for large sample masses. The amount of the inert substance should be taken for its volume to be close to the volume of the samples in the measurement experiments.
 
+The corrected mass can be calculated by simply subtracting the results of the correction experiment from the results of the measurements:
+
+$$\Delta m_\mathrm{true} = \Delta m_\mathrm{meas} - \Delta m_\mathrm{corr}.$$
+
 ## Oxygen nonstoichiometry
 
 Because this course is heavily oxide-oriented, of all the things that can possibly be studied by TGA, let's consider the investigation of the oxygen content in nonstoichiometric oxides.[^4] For an abstract $\ce{MO_{1 - \delta}}$ oxide, oxygen exchange can be expressed as
@@ -54,7 +58,7 @@ $$\ce{MO_{1 - \delta} <->[{$T\ \mathrm{or}\ p_{\ce{O2}}$ \mathrm{change}}] MO_{1
 
 Such loss of the lattice oxygen may correspond to a process written in Kröger-Vink notation as
 
-$$\ce{O^{\times}_O <=> \frac{1}{2} O_2 + V^{\bullet \bullet}_O + 2e^{'}}$$
+$$\ce{O^{\times}_O <=> \frac{1}{2}O_2 + V^{\bullet \bullet}_O + 2e^{'}}$$
 
 in case of the delocalized electron charge carriers and with a stoichiometric $\ce{MO}$ used as a reference crystal.[^5]
 
@@ -64,7 +68,7 @@ $$\Delta \delta = \frac{2n_\ce{O2}}{n_\ce{MO_{1 - \delta}}} = \frac{m_\ce{O2}}{M
 
 where $n_i$, $m_i$ and $M_i$ are the amount, mass and molar mass of the substance $i$, and $\Delta m = m_\ce{O2}$ is the mass change measured with TGA (on condition, of course, that all detected mass change is only due to the oxygen exchange, as per Equation $\ref{oxygenloss}$).
 
-However, in this way, it is only possible to measure the change in the oxygen nonstoichiometry $\Delta \delta$ depending on the variable conditions of the experiment (most often, on $T$). To calculate how the absolute oxygen nonstoichiometry $\delta$ changes in these conditions, we need to know what $\delta$ is in some conditions (e.g., at room temperature) so as to use this value as a reference point. To give a particular example, if we knew that after heating in air from room temperature up to $T$ the nonstoichiometry in $\ce{MO_{1 - \delta}}$ changes by 0.01 ($\Delta \delta = 0.01$), and if we knew that the absolute nonstoichiometry at room temperature was 0.1 ($\delta_\mathrm{air,\ 298\ K} = 0.1$), then we could say that at $T$ the oxygen content in our oxide is $1 - \delta - \Delta \delta = 0.89$.
+However, in this way, it is only possible to measure the change in the oxygen nonstoichiometry $\Delta \delta$ depending on the variable conditions of the experiment (most often, on $T$). To calculate how the absolute oxygen nonstoichiometry $\delta$ changes in these conditions, we need to know what $\delta$ is in some conditions (e.g., at room temperature) so as to use this value as a reference point. To give a particular example, if we knew that after heating in air from room temperature up to $T$ the nonstoichiometry in $\ce{MO_{1 - \delta}}$ changes by 0.01 ($\Delta \delta = 0.01$), and if we knew that the absolute nonstoichiometry at room temperature is 0.1 ($\delta_\mathrm{air,\ 298\ K} = 0.1$), then we could say that at $T$ the oxygen content in our oxide is $1 - \delta - \Delta \delta = 0.89$.
 
 One way of measuring the absolute nonstoichiometry is by reducing the oxide at high temperatures in a thermobalance in hydrogen-containing mixtures. The reduction products should be metals, or stoichiometric oxides that are not reduced in hydrogen, or their mixtures. In any case, the composition of the products should be known (and, preferably, confirmed with X-ray diffraction). For our abstract oxide, the complete reduction reaction may look as
 
@@ -121,7 +125,7 @@ The constant temperature of the balance is maintained with a curculating water b
 3. Put the sample powder (e.g., ≈1 g) into the crucible. Do not spill the sample onto the rim and the sides of the crucible.
 4. Weigh the crucible with the sample inside on analytical balances and record the mass.
 5. Open the thermobalance (raise the oven), place the crucible onto the sample holder (thermocouple) in the thermobalance and close the oven.
-6. Now we should set the experiment parameters, including the name of the sample, the initial masses, the temperature program, the sweep gases, and so on. All of it is done in the software.
+6. Now you should set the experiment parameters, including the name of the sample, the initial masses, the temperature program, the sweep gases, and so on. All of it is done in the software.
 7. When inert ($\ce{N2, Ar, He}$) or reactive ($\ce{H2, O2}$) sweep gases are used in the measurements, care should be taken to ensure that all air inside the TGA setup is displaced with required gas or gas mixture. For this purpose, if vacuum is not used to replace the gas inside the thermobalance, prolonged washing of the setup with the target gas mixtures is needed *before* the beginning of the measurements.
 
 [^1]: IUPAC Gold Book: [thermogravimetry](https://doi.org/10.1351/goldbook.T06324) and [thermal analysis](https://doi.org/10.1351/goldbook.T06295) definitions.
@@ -129,5 +133,5 @@ The constant temperature of the balance is maintained with a curculating water b
   Because of the way in which the balances are calibrated, Equation $\ref{truemass}$ cannot be used to calculate the true weight in vacuum based on the balance reading. This is how it can be, and is, calculated in the most precise measurements with microbalances (e.g., for combustion calorimetry): $m_\mathrm{in\ vacuo} = m_\mathrm{meas} \cdot \left(1 - \frac{\rho(\mathrm{air})}{\rho(\mathrm{cal\ weight})}\right) / \left(1 - \frac{\rho(\mathrm{air})}{\rho(\mathrm{sample})}\right)$, where $\rho(\mathrm{air})$ is the density of air, which is usually around $1.2\ \pu{kg/m^3}$ but depends strongly on the temperature, pressure and humidity, $\rho(\mathrm{cal\ weight})$ is the density of the calibration weight, which is typically $8\ \pu{g/cm^3}$, and $\rho(\mathrm{sample})$ is the density of the weighing sample.
 [^3]: This paragraph was inspired by the Netzsch STA 409 instruction manual and may not be relevant to the setups in which the temperature sensor is not located near the sample crucible inside the protective tube where the gas flows (e.g., to Setaram Sensys TG/DSC, to name just one).
 [^4]: For somewhat more detailed and broad account, see: Zuev A.Y., Tsvetkov D.S. (2017). Conventional Methods for Measurements of Chemo-Mechanical Coupling. In: Bishop, S., Perry, N., Marrocchelli, D., Sheldon, B. (eds) Electro-Chemo-Mechanics of Solids. Electronic Materials: Science & Technology. Springer, Cham. [https://doi.org/10.1007/978-3-319-51407-9_2](https://doi.org/10.1007/978-3-319-51407-9_2)
-[^5]: ...and the loss of the interstitial oxygen would be expressed as $\ce{O^{''}_i <=> \frac{1}{2} O_2 + V^{\times}_i + 2e^{'}}$. However, the defect chemistry differs a lot between oxides. You may encounter many quite different reactions that describe the oxygen exchange processes in different defect structure models.
+[^5]: ...and the loss of the interstitial oxygen would be expressed as $\ce{O^{''}_i <=> \frac{1}{2}O_2 + V^{\times}_i + 2e^{'}}$. However, the defect chemistry differs a lot between oxides. You may encounter many quite different reactions that describe the oxygen exchange processes in different defect structure models.
 [^6]: The molar mass of $\ce{LaCoO_{1.5}}$, which is the general formula of reduced $\ce{LaCoO_{3 - \delta}}$, is obviously equal to the total molar mass of the solid reduction products in Equation $\ref{redlacoo3}$: $M_\ce{LaCoO_{1.5}} = 0.5M_\ce{La2O3} + M_\ce{Co}$
