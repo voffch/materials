@@ -67,7 +67,7 @@ where $\rho_0$ is the density of the green compact. Please note that $\Delta L_\
 
 ### Thermal expansion
 
-ASTM E228[^2] defines fairly accurately the most important terms related to thermal expansion, which are quoted and commented on below.[^7]
+ASTM E228[^2] defines fairly accurately[^7] the most important terms related to thermal expansion, which are quoted and commented on below.
 
 > *linear thermal expansion*, $\Delta L / L_0$, the change in length relative to the initial length of the specimen accompanying a change in temperature, between temperatures $T_0$ and $T_1$
 
