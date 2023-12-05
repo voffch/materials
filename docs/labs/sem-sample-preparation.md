@@ -92,9 +92,19 @@ Grinding should start with the finest abrasive material capable of flattening th
 | P2000       | 10.3      | 1000        | 9.5       |
 | P2500       | 8.4       | 1500        | 8.0       |
 
-Polishing is usually distinguished from grinding by the use of loose abrasive particles embedded in an appropriately lubricated supporting soft material (e.g., special synthetic cloth).
+Polishing is usually distinguished from grinding by the use of loose abrasive particles embedded in an appropriately lubricated supporting soft material (e.g., special synthetic cloth). Diamond suspensions with several-μm-sized particles are used for rough and final polishing, and even finer colloid silica or alumina - for final polishing.
 
-**TO BE WRITTEN**
+As I mentioned above, there is no universal grinding/polishing protocol. The particular examples for different samples can be found in the standards[^4] or grinding equipment manufacturers' application reports. However, some commonplace advice for machine-assisted processes can be formulated:
+
+- start with the coarse (e.g., several tens of μm) grinding disks and move sequentially down to the finer ones, and then to the polishing cloth;
+- spend from one to several minutes on grinding with each disk;
+- the sample should be pressed to the disk with considerable force, typically in the range of 5-8 lbf (2.5-4 kgf) per 30 mm diameter mount;
+- the sample can be moved in a circular path against the rotation of the disk to aid in grinding and polishing;
+- the typical disk rotation speed is 200-300 RPM for grinding and 100-150 RPM for polishing;
+- during grinding, water should be continuously supplied into the center of the disk to cool down the abrasive material and wash away the particulates;
+- during polishing, water is not used, but suspensions and lubricants should be applied periodically to the cloth to keep it wet.
+
+After grinding and polishing, the samples are washed for a few minutes in the ultrasonic bath.
 
 ### Procedure
 
@@ -105,7 +115,21 @@ For grinding and polishing of our epoxy-mounted ceramic samples, we use [ПОЛ�
   <figcaption markdown>ПОЛИЛАБ П12Лб grinder/polisher (source - ПОЛИЛАБ П12Лб manual, in Russian)</figcaption>
 </figure>
 
-**TO BE WRITTEN**
+We have 75 μm, 18 μm, 10 μm and 6 μm diamond disks for grinding, and 1 μm diamond suspension along with the compatible glycol-based lube for polishing. We do not use finer silica suspension with ceramic samples because silica particles get stuck in ceramics and cannot be removed efficiently even with the ultrasonic cleaning.
+
+1. Turn on the grinding machine.
+2. Mount the roughest grinding disk onto the platen, fixing it with the clamp ring.
+3. Turn on the rotation and water supply, adjust the rotation speed to 200-300 RPM.
+4. Grind for up to several minutes.
+5. Turn off the motor and close the water tap.
+6. Remove the grinding disk.
+7. Repeat steps 2-6 with different disks, moving sequentially from the roughest to the finest.
+8. After the 6 μm diamond disk, install the cloth disk for polishing with the diamond suspension.
+9. Apply the suspension to the cloth.
+10. Turn on the rotation and adjust the speed to 150 RPM. Do not turn on the water tap.
+11. Polish for several minutes. Apply the lube and suspension when necessary for the cloth to stay wet and diamond-filled.
+12. Turn off the motor and the machine.
+13. Rinse the sample with running water and then place it in the ultrasonic bath filled with distilled water for 5 minutes.
 
 Handling of the polished surfaces should be done with care. You should not even touch the polished surface.[^5]
 
@@ -129,16 +153,39 @@ Carbon coating may not be suitable for very high resolution imaging due to the r
 
 ### Procedure
 
-In this lab, we coat the samples with a thin carbon layer using vacuum evaporation technique with a [Quorum Q150R](https://www.quorumtech.com/q150r-rotary-pumped-sputter-coatercarbon-coater/) coater.
+In this lab, we coat the samples with a thin carbon layer using vacuum evaporation technique with a [Quorum Q150R](https://www.quorumtech.com/q150r-rotary-pumped-sputter-coatercarbon-coater/) coater and pulsed cord evaporation technique.
 
 <figure markdown>
   ![Quorum Q150](../img/sem-sample-preparation-lab/quorum-Q150.jpg){ width="350" }
   <figcaption>Quorum Q150 coater (source - Quorum Q150 series instruction manual)</figcaption>
 </figure>
 
-**TO BE WRITTEN**
+In the figure above, you see the cylindrical rotating sample stage in the center of the glass cylinder. Above the stage, in the lid, the insert with the electrodes is mounted into the outer ring of the lid assembly.
 
-Coated surface should not be touched.[^5]
+<figure markdown>
+  ![Quorum Q150 lid and electrodes](../img/sem-sample-preparation-lab/quorum-Q150-electrodes-and-shutter.jpg){ width="600" }
+  <figcaption>Quorum Q150 clamp electrodes for carbon cord evaporation (left) and the lid assembly with the shutter detached (right). Source - Quorum Q150 series instruction manual.</figcaption>
+</figure>
+
+The general description of the coating process is as follows:
+
+1. Place the sample onto the rotating stage. The stage is positioned about 60 mm above the base plate.
+2. The carbon cord to be evaporated should be firmly fixed between the electrodes (see the figure above). We use a thin Quorum C5421 cord folded in six and tightly twisted.
+3. The lid assembly features the shutter (see the figure above) to protect the sample surface during the outgassing. Before the coating, the shutter opens. The problem with this particular coater is that the shutter may get stuck. To prevent this, grab the shutter by hand and move it up, down, left and right a few times.
+4. Close the lid, placing it onto the glass cylinder.
+5. Turn on the coater, tap *Recipes* on its touch screen, then run the *Pump down* recipe for a few seconds several times. Ensure that the shutter works properly.
+6. Open the *Pulsed cord* recipe. Ensure that the following process parameters are set:
+    - Pulse length 10 s
+    - Pulse count 1
+    - Pulse current 60 A
+    - Outgas current 9 A
+    - Source outgas time 60 s
+7. Run the *Pulsed cord* recipe. The recipe starts with evacuating the chamber. Push down onto the lid during the first seconds of pumping out to bring the lid assembly and the rubber seal on top of the glass cylinder close together.
+8. Wait. When the pressure doesn't get any lower anymore, press *Skip to the process*.
+9. The outgas current (9 A) will be passed through the cord for the specified time (60 s), after which the shutter will open, and the high-current (60 A) pulse will evaporate the cord, coating the sample surface.
+10. After this, manually stop the current *Pulsed cord* recipe and run the *Vent* recipe to fill the chamber with ambient air.
+11. Open the lid and remove the coated sample carefully. Remember that the coated surface should not be touched so as not to disrupt the very thin carbon layer.[^5]
+12. Disassemble and clean the coater if necessary. This should be done at least after every several coatings.
 
 ## Selected videos
 
@@ -155,6 +202,6 @@ If you'd like to delve deeper, there's also a [YouTube channel](https://www.yout
 [^1]: See also the [IUPAC definition](https://doi.org/10.1351/goldbook.S05484)
 [^2]: Joseph I. Goldstein et al., Scanning Electron Microscopy and X-Ray Microanalysis, 4th ed., Springer New York, 2017, eISBN 978-1-4939-6676-9, [https://doi.org/10.1007/978-1-4939-6676-9](https://doi.org/10.1007/978-1-4939-6676-9)
 [^3]: Patrick Echlin, Handbook of Sample Preparation for Scanning Electron Microscopy and X-Ray Microanalysis, Springer New York, 2011, eISBN 978-0-387-85731-2, [https://doi.org/10.1007/978-0-387-85731-2](https://doi.org/10.1007/978-0-387-85731-2)
-[^4]: ASTM E3-11(2017) "Standard Guide for Preparation of Metallographic Specimens", [https://doi.org/10.1520/E0003-11R17](https://doi.org/10.1520/E0003-11R17)
-[^5]: ASTM E1829-14 "Standard Guide for Handling Specimens Prior to Surface Analysis", [https://doi.org/10.1520/E1829-14](https://doi.org/10.1520/E1829-14)
-[^6]: E1508−12a "Standard Guide for Quantitative Analysis by Energy-Dispersive Spectroscopy", [https://doi.org/10.1520/E1508-12A](https://doi.org/10.1520/E1508-12A)
+[^4]: ASTM E 3-11(2017) "Standard Guide for Preparation of Metallographic Specimens", [https://doi.org/10.1520/E0003-11R17](https://doi.org/10.1520/E0003-11R17)
+[^5]: ASTM E 1829-14 "Standard Guide for Handling Specimens Prior to Surface Analysis", [https://doi.org/10.1520/E1829-14](https://doi.org/10.1520/E1829-14)
+[^6]: ASTM E 1508−12a "Standard Guide for Quantitative Analysis by Energy-Dispersive Spectroscopy", [https://doi.org/10.1520/E1508-12A](https://doi.org/10.1520/E1508-12A)
