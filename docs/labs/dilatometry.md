@@ -6,7 +6,9 @@ Dilatometry in a broad sense deals with the measurements of geometric sizes of m
 
 > A technique in which a dimension of a substance under negligible load is measured as a function of temperature while the substance is subjected to a controlled temperature program. Linear thermodilatometry and volume thermodilatometry are distinguished on the basis of the dimensions measured.
 
-According to ASTM E228,[^2] a typical measurement device, a dilatometer, is:
+The primary difference between the related methods of thermomechanical analysis (TMA) and dilatometry is that the latter uses negligible mechanical loads that should not cause deformation of the specimens.
+
+According to ASTM E 228,[^2] a typical measurement device, a dilatometer, is:
 
 > A device that measures the difference in linear thermal expansion between a test specimen and its own parts adjacent to the sample.
 
@@ -67,7 +69,7 @@ where $\rho_0$ is the density of the green compact. Please note that $\Delta L_\
 
 ### Thermal expansion
 
-ASTM E228[^2] defines fairly accurately[^7] the most important terms related to thermal expansion, which are quoted and commented on below.
+ASTM E 228[^2] defines fairly accurately[^7] the most important terms related to thermal expansion, which are quoted and commented on below.
 
 > *linear thermal expansion*, $\Delta L / L_0$, the change in length relative to the initial length of the specimen accompanying a change in temperature, between temperatures $T_0$ and $T_1$
 
@@ -228,6 +230,8 @@ In most cases, such calculations can be done automatically in the dilatometric d
 
 The lengths of the standard (reference) and the measured samples should be as close as possible. The conditions in both the measurement and the correction experiments should be the same, including the temperature change rates, dwell times, sweep gas compositions and flow rates, etc. All these variable parameters influence, to some extent, the small but inevitable temperature lags and temperature gradients along and across the measurement cell. It should be clear that these thermal effects should be equal in the respective measurements to be able to use Equations $\ref{dilcorr}$-$\ref{dilmeas}$.
 
+Temperature is also one of the measurement signals in dilatometry. For the most precise measurements, temperature calibration is performed using high-purity metals with well-known melting points. This calibration is based on abrupt length changes observed upon melting.[^15]
+
 ### Procedure
 
 We consider here only the sample measurements because the correction measurement procedures would be exactly the same.
@@ -265,7 +269,7 @@ Hence, *the opposite sides* of the sample that are in contact with the pushrod a
 Dilatometry is a non-specific method. Its results tell that something, which is accompanied by noticeable length/volume changes, happens in certain conditions ($T$, $p$). The results don’t tell what that something is. The dilatometry results are interpreted based on experience (you may know what usually happens with similar compounds at similar conditions) and additional experiments ([thermogravimetry](./thermogravimetry.md), X-ray diffraction, etc.).
 
 [^1]: IUPAC Gold Book definition, [https://doi.org/10.1351/goldbook.T06314](https://doi.org/10.1351/goldbook.T06314)
-[^2]: ASTM E228-22 "Standard Test Method for Linear Thermal Expansion of Solid Materials With a Push-Rod Dilatometer", [https://doi.org/10.1520/E0228-22](https://doi.org/10.1520/E0228-22)
+[^2]: ASTM E 228-22 "Standard Test Method for Linear Thermal Expansion of Solid Materials With a Push-Rod Dilatometer", [https://doi.org/10.1520/E0228-22](https://doi.org/10.1520/E0228-22)
 [^3]: Most of the "sintering" section is based on: Rahaman, M.N. (2007). Sintering of Ceramics (1st ed.). CRC Press. eISBN 9780429128424. [https://doi.org/10.1201/b15869](https://doi.org/10.1201/b15869)
 [^4]: The definition is taken from: Randall M. German, Sintering: from Empirical Observations to Scientific Principles, Butterworth-Heinemann, 2014, ISBN 9780124016828, [https://doi.org/10.1016/C2012-0-00717-X](https://doi.org/10.1016/C2012-0-00717-X)
 [^5]: see, e.g., Chapter 2.6.2 of Ref. 3
@@ -278,7 +282,7 @@ Dilatometry is a non-specific method. Its results tell that something, which is 
 
     T. Frueh, I.O. Ozer, S.F. Poterala, H. Lee, E.R. Kupp, C. Compson, J. Atria, G.L. Messing, A critique of master sintering curve analysis, Journal of the European Ceramic Society, 38(4), 2018, 1030-1037, [https://doi.org/10.1016/j.jeurceramsoc.2017.12.025](https://doi.org/10.1016/j.jeurceramsoc.2017.12.025)
 [^7]: ...only some equations are not quite correct. What, for instance, exactly is $\left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_T$ ?
-[^8]: Equation $\ref{physTEC}$ is written here in a "strict" way. However, in some sources, including ASTM E228-22 (ref. 2) and the Netzsch manuals, $\alpha _L$ is defined as $\alpha _L = \frac{1}{L_0} \left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_P$ with $L_0$ instead of $L$. This is mostly done for simplicity and because for any reasonable $L_0$ and $\Delta L$ values in typical dilatometric experiments the error introduced by replacing $L$ with $L_0$ would be negligible.
+[^8]: Equation $\ref{physTEC}$ is written here in a "strict" way. However, in some sources, including ASTM E 228-22 (ref. 2) and the Netzsch manuals, $\alpha _L$ is defined as $\alpha _L = \frac{1}{L_0} \left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_P$ with $L_0$ instead of $L$. This is mostly done for simplicity and because for any reasonable $L_0$ and $\Delta L$ values in typical dilatometric experiments the error introduced by replacing $L$ with $L_0$ would be negligible.
 [^9]: S. Touloukian Y, K. Kirby R, R. Taylor E, Y. R. Lee T. Thermophysical Properties of Matter - the TPRC Data Series. Volume 13. Thermal Expansion - Nonmetallic Solids. New York: IFI/Plenum Data Company; 1977. [https://apps.dtic.mil/sti/citations/ADA129116](https://apps.dtic.mil/sti/citations/ADA129116)
 [^10]: Shannon R. Revised effective ionic radii and systematic studies of interatomic distances in halides and chalcogenides. Acta Crystallographica Section A. 1976;32(5):751-67. [https://doi.org/10.1107/S0567739476001551](https://doi.org/10.1107/S0567739476001551). See also [http://abulafia.mt.ic.ac.uk/shannon/ptable.php](http://abulafia.mt.ic.ac.uk/shannon/ptable.php)
 [^11]: V.V. Sereda, D.S. Tsvetkov, I.L. Ivanov, A.Yu. Zuev, Interplay between chemical strain, defects and ordering in Sr1-xLaxFeO3 materials, Acta Materialia, 162, 2019, 33-45, [https://doi.org/10.1016/j.actamat.2018.09.051](https://doi.org/10.1016/j.actamat.2018.09.051)
@@ -288,3 +292,4 @@ Dilatometry is a non-specific method. Its results tell that something, which is 
 
     Tsvetkov D.S., Sereda V.V., Malyshkin D.A., Ivanov I.L., Zuev A.Y. Chemical lattice strain in nonstoichiometric oxides: an overview. Journal of Materials Chemistry A. 2022;10(12):6351-75. [https://doi.org/10.1039/D1TA08407K](https://doi.org/10.1039/D1TA08407K)
 [^14]: The figures in this section are from the Netzsch DIL 409 operation manual.
+[^15]: Henderson, J.B., Emmerich, W.D. & Wassmer, E. A method for the temperature calibration of pushrod dilatometers. Journal of Thermal Analysis 32, 1905–1913 (1987). [https://doi.org/10.1007/BF01913983](https://doi.org/10.1007/BF01913983)
