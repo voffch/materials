@@ -1,0 +1,20 @@
+figure img {
+  margin: 0 auto;
+}
+
+.md-content iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+.mermaid {
+  text-align: center;
+}
+
+.md-typeset ul ul {
+  list-style-type:  circle;
+}
+
+.md-typeset ul ul ul {
+  list-style-type:  square;
+}

@@ -1,0 +1,1253 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sem-sample-preparation/">
+      
+      
+        <link rel="next" href="../thermogravimetry/">
+      
+      
+      <link rel="icon" href="../../assets/favicon/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Dilatometry - Materials: synthesis and stuff</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dilatometry" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Materials: synthesis and stuff" class="md-header__button md-logo" aria-label="Materials: synthesis and stuff" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3H6m7-6 1.34-1.34L16.27 18H7.73l2.66-4.61L13 16m-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Materials: synthesis and stuff
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dilatometry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Materials: synthesis and stuff" class="md-nav__button md-logo" aria-label="Materials: synthesis and stuff" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3H6m7-6 1.34-1.34L16.27 18H7.73l2.66-4.61L13 16m-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5Z"/></svg>
+
+    </a>
+    Materials: synthesis and stuff
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Synthesis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Synthesis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../synthesis/classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Labs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co-preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cobalt Preparation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glycerol-nitrate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glycerol-Nitrate Synthesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pressing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Powder Pressing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particle-size/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Size Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sem-sample-preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEM Sample Preparation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Dilatometry
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Dilatometry
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phenomena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phenomena
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phenomena">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermal-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thermal expansion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anomalies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anomalies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase transitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxygenwater-exchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oxygen/water exchange
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measurements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpretation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thermogravimetry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermogravimetry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../homework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../origami/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Origami Packets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phenomena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phenomena
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phenomena">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermal-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thermal expansion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anomalies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anomalies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase transitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxygenwater-exchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oxygen/water exchange
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measurements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpretation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="dilatometry">Dilatometry<a class="headerlink" href="#dilatometry" title="Permanent link">&para;</a></h1>
+<h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
+<p>Dilatometry in a broad sense deals with the measurements of geometric sizes of materials under the influence of external conditions, such as temperature, pressure, electromagnetic fields, etc. Most often, temperature is the independent (variable) parameter. Thus, thermodilatometry, which is usually called simply "dilatometry", is defined by IUPAC<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> as</p>
+<blockquote>
+<p>A technique in which a dimension of a substance under negligible load is measured as a function of temperature while the substance is subjected to a controlled temperature program. Linear thermodilatometry and volume thermodilatometry are distinguished on the basis of the dimensions measured.</p>
+</blockquote>
+<p>The primary difference between the related methods of thermomechanical analysis (TMA) and dilatometry is that the latter uses negligible mechanical loads that should not cause deformation of the specimens.</p>
+<p>According to ASTM E 228,<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> a typical measurement device, a dilatometer, is:</p>
+<blockquote>
+<p>A device that measures the difference in linear thermal expansion between a test specimen and its own parts adjacent to the sample.</p>
+</blockquote>
+<h2 id="phenomena">Phenomena<a class="headerlink" href="#phenomena" title="Permanent link">&para;</a></h2>
+<p>Let us consider what can be studied with thermodilatometry. For simplicity, we will limit our discussion mostly to <em>polycrystalline ceramic oxide materials</em> as the objects of study. Thus, <a href="#sintering">sintering</a> and  <a href="#thermal-expansion">thermal expansion</a> are the main phenomena of interest.</p>
+<h3 id="sintering">Sintering<a class="headerlink" href="#sintering" title="Permanent link">&para;</a></h3>
+<p>Sintering is a thermal treatment for bonding particles into a coherent, predominantly solid structure via mass transport events that often occur on the atomic scale. The bonding leads to improved strength and lower system energy.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p>The driving force of sintering is the lowering of the overall surface free energy of the system. In the absence of an external stress and a chemical reaction, the energy can be lowered by decreasing the overall surface area, or reducing the surface curvature of the particles. Consider, for example, one mole of powdered substance with the molar volume <span class="arithmatex">\(V_m\)</span>, where the powder consists of monodisperse spherical particles with the radius <span class="arithmatex">\(r\)</span>. The number of particles is</p>
+<div class="arithmatex">\[ N = \frac{V_m}{\frac{4}{3}\pi r^3}. \]</div>
+<p>The surface area, <span class="arithmatex">\(S_A\)</span>, is equal to</p>
+<div class="arithmatex">\[ S_A = 4\pi r^2N = \frac{3V_m}{r}. \]</div>
+<p>If <span class="arithmatex">\(\gamma _{SV}\)</span> is the specific surface energy (i.e., the surface energy per unit area) of the particles, then the surface free energy associated with the system of particles is</p>
+<div class="arithmatex">\[ E_S = \frac{3\gamma _{SV}V_m}{r}. \label{E_S} \]</div>
+<p>You see that the energy is lowered with the increase in <span class="arithmatex">\(r\)</span>. Equation <span class="arithmatex">\(\ref{E_S}\)</span> is oversimplified: it doesn't take into account existence of grain boundaries with their own energy, doesn't differentiate between densification (pore volume decrease) and coarsening (grain growtn), etc. Nevertheless, it describes a motivation for the sintering process.</p>
+<p>Most types of sintering can be investigated with a dilatometer, including:</p>
+<ul>
+<li><em>Solid-state sintering</em>, which is a type of sintering that occurs in pure, single-phase, polycrystalline materials. It is achieved by heating the consolidated mass of particles, referred to as the green body or powder compact, to a temperature that is in the range between approximately 50% and 80% of the melting point. No actual melting occurs.</li>
+<li><em>Liquid-phase sintering</em> employs a small amount of an additive that forms liquid phase between the particles or grains at the sintering temperature. This liquid phase provides a high-diffusivity path to facilitate transport of matter into the pores to produce densification, but its amount is insufficient, by itself, to fill up the pores.</li>
+<li><em>Viscous sintering</em>, which is a sintering process in amorphous materials, such as glasses, where the matter transport occurs predominantly by viscous flow.</li>
+<li><em>Vitrification</em>, realized in clay-based ceramics, such as porcelains, by the formation of a large-volume fraction of a liquid phase that fills up the pores. In the traditional ceramics, the liquid phases are molten silicates that remain as a glassy phase after cooling, giving the fabricated materials a characteristic glassy appearance.</li>
+</ul>
+<p>There's also pressure-assisted sintering or pressure sintering, which is realized in hot pressing and hot isostatic pressing techniques. By obvious reasons, it cannot be measured by dilatometry.</p>
+<p>Sintering can be studied by dilatometry in the following modes:</p>
+<ul>
+<li><em>isothermal</em>, where the shrinkage rate is measured at a constant temperature. The time dependence of relative shrinkage, according to different models, is related to the predominant mechanism of sintering and can be used to determine the said mechanism.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></li>
+<li><em>continuous heating</em>, where the shrinkage is determined during the heating. The heating rate is usually constant. This mode allows obtaining the temperatures where the sintering starts and those where it has the highest rate. Using appropriate models,<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> it is also possible to formulate the equations for predicting the shrinkage depending on the process parameters (temperature and time).</li>
+</ul>
+<p>In both cases, the extent of the shrinkage up to a certain moment in time or up to a certain temperature is immediately obtained.</p>
+<p>Solid green line in the figure below shows how the green zirconia sample length changes with temperature upon sintering. The sintering onset is observed on the dilatometric curve at 969.9 °C. The temperatures when the binder burns away (389.4 °C) and where the sintering rate is highest (1402.7 °C) can be easily identified on the derivative curve (dashed green line).</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-zirconia-sintering.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Zirconia sintering" src="../../img/dilatometry-lab/netzsch-zirconia-sintering.webp" /></a>
+  </p>
+<figcaption>
+<p>Dilatometric curves for yttria-stabilized zirconia: green body (solid green line) and sintered ceramic (solid red line). Dashed green line is the derivative of the solid green line. (from the <a href="https://analyzing-testing.netzsch.com/en/applications/ceramics-glass/zirconia-sintering">Netzsch website</a>)</p>
+</figcaption>
+</figure>
+<p>The densification rate is related to the linear shrinkage rate, which can actually be measured by dilatometry, as</p>
+<div class="arithmatex">\[-\frac{\mathrm{d} L}{L\mathrm{d} t} = -\frac{\mathrm{d} \rho}{3\rho \mathrm{d} t},\]</div>
+<p>or, in the integral form,</p>
+<div class="arithmatex">\[\rho = \frac{\rho_0}{\left( 1 + \frac{\Delta L_\mathrm{sinter}}{L_0}\right)^3} \label{rho},\]</div>
+<p>where <span class="arithmatex">\(\rho_0\)</span> is the density of the green compact. Please note that <span class="arithmatex">\(\Delta L_\mathrm{sinter}\)</span> in Equation <span class="arithmatex">\(\ref{rho}\)</span> refers only to the length change in the sintering process itself. All non-isothermal sintering occurs simultaneously with thermal expansion, which should be subtracted from the measured <span class="arithmatex">\(\Delta L\)</span> value to obtain <span class="arithmatex">\(\Delta L_\mathrm{sinter}\)</span> in non-isothermal conditions. But what exactly is thermal expansion?</p>
+<h3 id="thermal-expansion">Thermal expansion<a class="headerlink" href="#thermal-expansion" title="Permanent link">&para;</a></h3>
+<p>ASTM E 228<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> defines fairly accurately<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> the most important terms related to thermal expansion, which are quoted and commented on below.</p>
+<blockquote>
+<p><em>linear thermal expansion</em>, <span class="arithmatex">\(\Delta L / L_0\)</span>, the change in length relative to the initial length of the specimen accompanying a change in temperature, between temperatures <span class="arithmatex">\(T_0\)</span> and <span class="arithmatex">\(T_1\)</span></p>
+</blockquote>
+<div class="arithmatex">\[\varepsilon _\mathrm{therm} = \frac{\Delta L}{L_0} = \frac{L_1 - L_0}{L_0}\]</div>
+<p><span class="arithmatex">\(\varepsilon\)</span> is sometimes called "strain".</p>
+<blockquote>
+<p><em>mean (average) coeffıcient of linear thermal expansion</em>, <span class="arithmatex">\(\alpha _m\)</span>, the ratio between the expansion and the temperature difference that is causing it. It is referred to as the average coefficient of thermal expansion for the temperature range between <span class="arithmatex">\(T_0\)</span> and <span class="arithmatex">\(T_1\)</span></p>
+</blockquote>
+<div class="arithmatex">\[\alpha _m = \frac{1}{L_0} \frac{\Delta L}{\Delta T} \label{techTEC}\]</div>
+<p>The most common abbreviations for the <span class="arithmatex">\(\alpha\)</span> coefficients are:</p>
+<ul>
+<li>TEC - thermal expansion coefficient</li>
+<li>LTEC - linear thermal expansion coefficient</li>
+<li>CTE - coefficient of thermal expansion</li>
+</ul>
+<p><span class="arithmatex">\(\alpha _m\)</span> is also known as the "technical TEC" for its technological significance: by multiplying its value by <span class="arithmatex">\(\Delta T\)</span>, we immediately get the relative elongation <span class="arithmatex">\(\varepsilon\)</span> between two temperatures.</p>
+<blockquote>
+<p><em>thermal expansivity (instantaneous coeffıcient of thermal expansion)</em>, <span class="arithmatex">\(\alpha _L\)</span>, identical to the above, except that the derivative replaces the finite differences of Equation <span class="arithmatex">\(\ref{techTEC}\)</span>. The thermal expansivity is related to the length change for an infinitesimally narrow temperature range, at any temperature <span class="arithmatex">\(T\)</span> (essentially a “tangent” point)</p>
+</blockquote>
+<div class="arithmatex">\[\alpha _L = \frac{1}{L} \left( \frac{\partial L}{\partial T} \right)_p  \label{physTEC}\]</div>
+<p><span class="arithmatex">\(\alpha _L\)</span> is also known as the "physical TEC".<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
+<p>What trends can we expect of the values of <span class="arithmatex">\(\varepsilon\)</span> and <span class="arithmatex">\(\alpha\)</span>? How do they typically change with temperature? Thermal expansion in solids is caused by the atomic vibrations in crystal lattices being anharmonic.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> Via thermodynamic and statistical mechanics calculations, one can derive the relationship between the <a href="https://en.wikipedia.org/wiki/Gr%C3%BCneisen_parameter">Grüneisen parameter</a> (<span class="arithmatex">\(\gamma\)</span>) and volumetric TEC (<span class="arithmatex">\(\alpha_V\)</span>):</p>
+<div class="arithmatex">\[\alpha _V (T) = \frac{1}{V} \left( \frac{\partial V}{\partial T} \right)_P = \gamma \frac{C_V}{V_m}\chi _T\]</div>
+<p>where <span class="arithmatex">\(V_m\)</span>, <span class="arithmatex">\(C_V\)</span>, and <span class="arithmatex">\(\chi _T\)</span> are the molar volume, the heat capacity at constant volume, and the isothermal compressibility, respectively.
+Now, <span class="arithmatex">\(\chi _T\)</span> and <span class="arithmatex">\(V_m\)</span> for solids weakly depend on temperature; <span class="arithmatex">\(\gamma\)</span> is also almost temperature-independent (especially at <span class="arithmatex">\(T\)</span> well above the Debye temperature), and <span class="arithmatex">\(C_V(T)\)</span> is rather flat at high temperatures.
+All of it means that in many simple (thermal-expansion-only) cases <span class="arithmatex">\(\varepsilon\)</span> is almost linear and <span class="arithmatex">\(\alpha\)</span> can be treated as a constant. This is the case, for instance, for the thermal expansion of sintered zirconia (red line in the figure above). In a very wide temperature range, however, some temperature dependence of TEC is anticipated (see the figure below).</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/tec-nio-tac.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="NiO and TaC expansion" src="../../img/dilatometry-lab/tec-nio-tac.jpg" width="500" /></a>
+  </p>
+<figcaption>
+<p>Linear expansion, <span class="arithmatex">\(100\frac{\Delta L}{L_0}\)</span>, of <span class="arithmatex">\(\ce{NiO}\)</span> and <span class="arithmatex">\(\ce{TaC}\)</span><sup id="fnref4:9"><a class="footnote-ref" href="#fn:9">9</a></sup></p>
+</figcaption>
+</figure>
+<h3 id="anomalies">Anomalies<a class="headerlink" href="#anomalies" title="Permanent link">&para;</a></h3>
+<p>In addition to just the thermal expansion, we can observe different anomalies on the dilatometric curves of the sintered polycrystalline oxide ceramics. These anomalies include:</p>
+<ul>
+<li>shrinkages caused by creep and sintering (can be often seen at high <span class="arithmatex">\(T\)</span> or during the high-temperature isothermal dwells)</li>
+<li>chemical reactions inside the sample (interactions, decompositions) for unstable or composite samples (e.g., there's pyrolysis of the binder in the figure with zirconia above)</li>
+<li>phase transitions (only those accompanied by perceptible size changes)</li>
+<li>chemical reactions with the atmosphere (oxygen exchange, hydration/dehydration, etc., depending on the atmosphere)</li>
+</ul>
+<p>Let's now discuss the last two.</p>
+<h4 id="phase-transitions">Phase transitions<a class="headerlink" href="#phase-transitions" title="Permanent link">&para;</a></h4>
+<p>A transition for which the n<sup>th</sup> derivative of the chemical potential is discontinuous can be classified as an n<sup>th</sup>-order phase transition. Thus, as volume is the first derivative of the Gibbs free energy, <span class="arithmatex">\(G\)</span>,</p>
+<div class="arithmatex">\[\left( \frac{\partial G}{\partial p} \right)_T = V,\]</div>
+<p>and <span class="arithmatex">\(\alpha\)</span> is the second derivative,</p>
+<div class="arithmatex">\[\left( \frac{\partial^2 G}{\partial p \partial T} \right) = \left( \frac{\partial V}{\partial T} \right)_p = \alpha _V,\]</div>
+<p>we can expect the first- and second-order phase transitions to be seen on the <span class="arithmatex">\(\varepsilon (T)\)</span> and <span class="arithmatex">\(\alpha (T)\)</span> dependences. Two such examples are given below.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/1st-order-trans.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="1st order phase transition" src="../../img/dilatometry-lab/1st-order-trans.jpg" width="500" /></a>
+  </p>
+<figcaption>
+<p>Linear expansion of <span class="arithmatex">\(\ce{SiO2}\)</span>: first-order phase transition<sup id="fnref3:9"><a class="footnote-ref" href="#fn:9">9</a></sup></p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/2nd-order-trans.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="2nd order phase transition" src="../../img/dilatometry-lab/2nd-order-trans.jpg" width="500" /></a>
+  </p>
+<figcaption>
+<p>TEC of <span class="arithmatex">\(\ce{Y3Fe5O_{12}}\)</span>: second-order phase transition<sup id="fnref2:9"><a class="footnote-ref" href="#fn:9">9</a></sup></p>
+</figcaption>
+</figure>
+<h4 id="oxygenwater-exchange">Oxygen/water exchange<a class="headerlink" href="#oxygenwater-exchange" title="Permanent link">&para;</a></h4>
+<p>There are two phenomena that often manifest on dilatometric curves of nonstoichiometric complex oxides. Both of them, oxygen exchange and water exchange, are related to the equilibria between the sample and the components of the surrounding gas atmosphere. Due to the fact that these phenomena result from the changes in the <em>chemical composition</em> (oxygen content or water content in the crystal lattice of the oxides), the associated changes in linear dimensions and volume are called <em>chemical expansion</em>. Let us now consider the possible origins of chemical expansion and how it appears on dilatometric curves in the simpler cases.</p>
+<p>The process of reduction (i.e., oxygen loss) upon heating for many oxides can be written, in Kröger-Vink notation, as</p>
+<div class="arithmatex">\[\ce{O^{\times}_O + 2M^{\bullet}_M &lt;=&gt; \frac{1}{2}O_2 + V^{\bullet \bullet}_O + 2M^{\times}_M},\]</div>
+<p>where metals that can change their oxidation state can act as <span class="arithmatex">\(\ce{M}\)</span> (e.g., <span class="arithmatex">\(\ce{Co}\)</span>, <span class="arithmatex">\(\ce{Fe}\)</span>). It is seen that the oxygen release is accompanied by the oxygen vacancy formation and the reduction of the metal cations. Both, especially the latter, can influence the size of the crystal lattice through the change in the size of the nodes in it. For instance, cations with lower oxidation state are larger,<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> and so the reduction of the cations contributes to expansion.</p>
+<p>In the figure below, following the first-order phase transition at 275 °C, you can see a pronounced upward trend in the dilatometric curve. This deviation from expected more or less linear expansion is due to oxygen release.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/SF-reduction-dil.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Reduction chemical expansion" src="../../img/dilatometry-lab/SF-reduction-dil.png" width="450" /></a>
+  </p>
+<figcaption>
+<p>Reduction-induced chemical expansion example: red arrow shows the deviation due to oxygen release<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup></p>
+</figcaption>
+</figure>
+<p>Please note that usually chemical expansion is not associated with any phase transitions, so the occurrence of the phase transition in this case is purely coincidental.</p>
+<p>In turn, hydration, which is observed only in some nonstoichiometric oxides (in a small fraction of them, in fact), can be expressed as</p>
+<div class="arithmatex">\[\ce{O^{\times}_O + V^{\bullet \bullet}_O + H2O &lt;=&gt; 2OH^{\bullet}_O}.\]</div>
+<p>The origins of this phenomenon are less clear,<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> but they are also, undoubtedly, related to the defect chemistry and to different defect species present in hydrated and dehydrated crystal lattices of oxides, respectively. In the figure below you see how the length of the sample may change in the temperature region in which the hydrated oxide actively loses lattice water (200-600 °C, blue line). Thus, water uptake contributes to expansion, and its release causes shrinkage.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/BCN50-hydration-dil.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Hydration chemical expansion" src="../../img/dilatometry-lab/BCN50-hydration-dil.png" width="450" /></a>
+  </p>
+<figcaption>
+<p>Hydration-induced chemical expansion example: the black arrow shows the difference between the dilatometric curves measured in wet and dry air; the red curve corresponds to the sample annealed in dry air (dehydrated)<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup></p>
+</figcaption>
+</figure>
+<p>You can find out more about chemical expansion (expansion due to the change in the chemical composition via substitution, oxygen exchange or hydration) in oxides and its measurement in the corresponding literature.<sup id="fnref2:13"><a class="footnote-ref" href="#fn:13">13</a></sup></p>
+<p>And, of course, in order to definitely attribute the anomalies observed in the dilatometric experiments to any physical phenomena, be it phase transitions or chemical expansion, you always need to support your claims with the results obtained by other methods, such as <a href="../thermogravimetry/">thermogravimetric analysis</a>, X-ray diffraction, etc.</p>
+<h2 id="measurements">Measurements<a class="headerlink" href="#measurements" title="Permanent link">&para;</a></h2>
+<h3 id="equipment">Equipment<a class="headerlink" href="#equipment" title="Permanent link">&para;</a></h3>
+<p>In this lab, we're using Netzsch DIL 402 PC, which is a horizontal push-rod dilatometer. In the following figure,<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup> it is shown with the movable oven slid all the way to the right, giving access to the sample holder.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-overview.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402" src="../../img/dilatometry-lab/netzsch-dil402-overview.jpg" /></a>
+  </p>
+<figcaption>Netzsch DIL 402: external view</figcaption>
+</figure>
+<p>The furnace uses SiC heating element and a separate thermocouple near the heater for more precise temperature control. The protective gas-tight alumina tube allows different atmospheres to be used during the measurements.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-oven.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 oven" src="../../img/dilatometry-lab/netzsch-dil402-oven.jpg" width="400" /></a>
+  </p>
+<figcaption>Netzsch DIL 402 high-temperature oven</figcaption>
+</figure>
+<p>The working principle of all push-rod dilatometers is similar. The sample is placed inside the sample holder, which is usually a tube made of fused silica or, for higher-temperature applications, high-purity alumina (or even graphite or tungsten for extreme temperatures). The sample is firmly held between the holder and a movable spring-loaded pushrod, which exerts very small pressure on the sample (the load is below 50 cN).</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-sample-holder.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 sample holder" src="../../img/dilatometry-lab/netzsch-dil402-sample-holder.jpg" width="600" /></a>
+  </p>
+<figcaption>Netzsch DIL 402 sample holder</figcaption>
+</figure>
+<p>The sample holder with the sample inside is inserted into the oven that heats up the sample. The corresponding changes in the sample length are transmitted, via the pushrod, to the length sensor, or displacement transduser. In Netzsch DIL 402 as in many other dilatometers the transducer is inductive (linear variable differential transformer, or <a href="https://en.wikipedia.org/wiki/Linear_variable_differential_transformer">LVDT</a>), although different optical sensors are becoming quite popular. The length changes measured by the transducer are recorded along with the temperature, which is measured with a thermocouple placed very close to the sample.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-sample-and-thermocouple.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 sample and thermocouple" src="../../img/dilatometry-lab/netzsch-dil402-sample-and-thermocouple.jpg" width="400" /></a>
+  </p>
+<figcaption>Sample thermocouple positioning</figcaption>
+</figure>
+<p>The main parts of the dilatometer are shown in the figure below. Please note that the temperature inside the chamber with the sensor is maintained by an external circulating thermostat (not shown).</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-schematic.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 schematic" src="../../img/dilatometry-lab/netzsch-dil402-schematic.jpg" /></a>
+  </p>
+<figcaption>Netzsch DIL 402 schematic</figcaption>
+</figure>
+<h3 id="correction">Correction<a class="headerlink" href="#correction" title="Permanent link">&para;</a></h3>
+<p>Because both the sample and the sample holder are heated in the oven, exhibiting thermal expansion, push-rod dilatometers always measure the difference in expansion between the specimen and the portion of the sample holder that is positioned parallel to it. Hence, the correction is needed to calculate the real expansion of the sample. The corresponding procedure is fairly standard.<sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup> In a correction experiment, which is performed with a sample made of reference material with known thermal expansion, <span class="arithmatex">\(\left( \Delta L / L_0 \right)_\mathrm{ref} = f(T)\)</span>, the temperature-dependent correction coefficient <span class="arithmatex">\(A\)</span> is found:</p>
+<div class="arithmatex">\[A = \left( \frac{\Delta L}{L_0} \right)_\mathrm{ref} - \left( \frac{\Delta L}{L_0} \right)_\mathrm{meas} \label{dilcorr}\]</div>
+<p>High-purity platinum, tungsten, copper, alumina or quartz are among the commonly used reference materials.</p>
+<p>In the subsequent measurements, corrected thermal expansion is calculated from the measurement results as</p>
+<div class="arithmatex">\[\left( \frac{\Delta L}{L_0} \right)_\mathrm{corr} = \left( \frac{\Delta L}{L_0} \right)_\mathrm{meas} + A. \label{dilmeas}\]</div>
+<p>In most cases, such calculations can be done automatically in the dilatometric data analysis software.</p>
+<p>The lengths of the standard (reference) and the measured samples should be as close as possible. The conditions in both the measurement and the correction experiments should be the same, including the temperature change rates, dwell times, sweep gas compositions and flow rates, etc. All these variable parameters influence, to some extent, the small but inevitable temperature lags and temperature gradients along and across the measurement cell. It should be clear that these thermal effects should be equal in the respective measurements to be able to use Equations <span class="arithmatex">\(\ref{dilcorr}\)</span>-<span class="arithmatex">\(\ref{dilmeas}\)</span>.</p>
+<p>Temperature is also one of the measurement signals in dilatometry. For the most precise measurements, temperature calibration is performed using high-purity metals with well-known melting points. This calibration is based on abrupt length changes observed upon melting.<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup></p>
+<h3 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h3>
+<p>We consider here only the sample measurements because the correction measurement procedures would be exactly the same.</p>
+<p>The samples taken for the sintering measurements are usually pre-compacted powders (e.g., pellets made by <a href="../pressing/">uniaxial pressing</a>), sometimes called "green compacts" or "green bodies". Due to the relatively high shrinkage in the process, the green pellet length is usually not very high (several mm) to prevent exceeding the measurement range of the dilatometric sensor.</p>
+<p>In turn, to avoid the shrinkages caused by sintering, thermal expansion is investigated using pre-sintered ceramic samples, most often shaped as bars, cylinders or pellets.</p>
+<p>Regardless of the particular shape of the sample, there is one requirement that all dilatometric samples must meet. As seen in the figure below, the sample within the sample holder rests on the supports while being pushed against the holder by the pushrod.</p>
+<figure>
+<p><a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-sample-in-sample-holder.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 sample in holder" src="../../img/dilatometry-lab/netzsch-dil402-sample-in-sample-holder.jpg" width="400" /></a>
+  </p>
+<figcaption>Sample inside the sample holder</figcaption>
+</figure>
+<p>Hence, <em>the opposite sides</em> of the sample that are in contact with the pushrod and the "base" of the holder (formed by a removable slide) <em>must be flat and parallel</em>. Because of this, the actual measurement procedure starts with the preparation of the sample.</p>
+<ol>
+<li>If the opposite sides of the sample are not flat and parallel, prepare the sample accordingly by mechanical means (diamond cutting wheels, grinding tools, small files, sandpaper, etc.).</li>
+<li>When the sample is ready, measure its length with a micrometer.</li>
+<li>Open the dilatometer by sliding the oven all the way to the right after loosening the retaining nut on the protective tube.</li>
+<li>Retract the pushrod using the buttons on the base plate of the dilatometer.</li>
+<li>Position the sample onto the alumina supports inside the sample holder.</li>
+<li>
+<p>Insert the pushrod, bringing it in contact with the sample. To prevent the interaction between the sample, the pushrod and the sample holder parts, use spacers as shown:
+    <a class="glightbox" href="../../img/dilatometry-lab/netzsch-dil402-sample-between-spacers.jpg" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Netzsch DIL 402 sample between spacers" src="../../img/dilatometry-lab/netzsch-dil402-sample-between-spacers.jpg" width="300" /></a></p>
+<p>You may need to hold the leftmost spacer with tweezers while sliding the pushrod.</p>
+</li>
+<li>
+<p>As the pushrod is somewhat movable, small adjustments to its position as well as the positions of the sample and the spacers can be made at this time.</p>
+</li>
+<li>Slide the furnace to the left and tighten the retaining nut, which will compress the O-ring inside and seal the internal space of the dilatometer.</li>
+<li>Now you should set the experiment parameters, including the name of the sample, the initial length, the temperature program, the sweep gases, and so on. All of it is done in the software.</li>
+<li>Depending on the gas atmosphere used for the measurements, you may need to wash the dilatometer with the working gas before starting the experiment.</li>
+</ol>
+<h2 id="interpretation">Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">&para;</a></h2>
+<p>Dilatometry is a non-specific method. Its results tell that something, which is accompanied by noticeable length/volume changes, happens in certain conditions (<span class="arithmatex">\(T\)</span>, <span class="arithmatex">\(p\)</span>). The results don’t tell what that something is. The dilatometry results are interpreted based on experience (you may know what usually happens with similar compounds at similar conditions) and additional experiments (<a href="../thermogravimetry/">thermogravimetry</a>, X-ray diffraction, etc.).</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>IUPAC Gold Book definition, <a href="https://doi.org/10.1351/goldbook.T06314">https://doi.org/10.1351/goldbook.T06314</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>ASTM E 228-22 "Standard Test Method for Linear Thermal Expansion of Solid Materials With a Push-Rod Dilatometer", <a href="https://doi.org/10.1520/E0228-22">https://doi.org/10.1520/E0228-22</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Most of the "sintering" section is based on: Rahaman, M.N. (2007). Sintering of Ceramics (1st ed.). CRC Press. eISBN 9780429128424. <a href="https://doi.org/10.1201/b15869">https://doi.org/10.1201/b15869</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>The definition is taken from: Randall M. German, Sintering: from Empirical Observations to Scientific Principles, Butterworth-Heinemann, 2014, ISBN 9780124016828, <a href="https://doi.org/10.1016/C2012-0-00717-X">https://doi.org/10.1016/C2012-0-00717-X</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>see, e.g., Chapter 2.6.2 of Ref. 3&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>see, e.g., how the Master Sintering Curve (MSC) approach can be used for predicting the densities of the sintered bodies:</p>
+<p>Su, H. and Johnson, D.L. (1996), Master Sintering Curve: A Practical Approach to Sintering. Journal of the American Ceramic Society, 79: 3211-3217. <a href="https://doi.org/10.1111/j.1151-2916.1996.tb08097.x">https://doi.org/10.1111/j.1151-2916.1996.tb08097.x</a></p>
+<p>K. Rajeswari, S. Padhi, A.R.S. Reddy, Roy Johnson, Dibakar Das. Studies on sintering kinetics and correlation with the sinterability of 8Y zirconia ceramics based on the dilatometric shrinkage curves. Ceramics International, 39(5), 2013, 4985-4990, <a href="https://doi.org/10.1016/j.ceramint.2012.11.095">https://doi.org/10.1016/j.ceramint.2012.11.095</a></p>
+<p>T. Frueh, I.O. Ozer, S.F. Poterala, H. Lee, E.R. Kupp, C. Compson, J. Atria, G.L. Messing, A critique of master sintering curve analysis, Journal of the European Ceramic Society, 38(4), 2018, 1030-1037, <a href="https://doi.org/10.1016/j.jeurceramsoc.2017.12.025">https://doi.org/10.1016/j.jeurceramsoc.2017.12.025</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>...only some equations are not quite correct. What, for instance, exactly is <span class="arithmatex">\(\left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_T\)</span> ?&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Equation <span class="arithmatex">\(\ref{physTEC}\)</span> is written here in a "strict" way. However, in some sources, including ASTM E 228-22 (ref. 2) and the Netzsch manuals, <span class="arithmatex">\(\alpha _L\)</span> is defined as <span class="arithmatex">\(\alpha _L = \frac{1}{L_0} \left( \frac{\mathrm{d} L}{\mathrm{d} T} \right)_P\)</span> with <span class="arithmatex">\(L_0\)</span> instead of <span class="arithmatex">\(L\)</span>. This is mostly done for simplicity and because for any reasonable <span class="arithmatex">\(L_0\)</span> and <span class="arithmatex">\(\Delta L\)</span> values in typical dilatometric experiments the error introduced by replacing <span class="arithmatex">\(L\)</span> with <span class="arithmatex">\(L_0\)</span> would be negligible.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>S. Touloukian Y, K. Kirby R, R. Taylor E, Y. R. Lee T. Thermophysical Properties of Matter - the TPRC Data Series. Volume 13. Thermal Expansion - Nonmetallic Solids. New York: IFI/Plenum Data Company; 1977. <a href="https://apps.dtic.mil/sti/citations/ADA129116">https://apps.dtic.mil/sti/citations/ADA129116</a>&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:9" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:9" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Shannon R. Revised effective ionic radii and systematic studies of interatomic distances in halides and chalcogenides. Acta Crystallographica Section A. 1976;32(5):751-67. <a href="https://doi.org/10.1107/S0567739476001551">https://doi.org/10.1107/S0567739476001551</a>. See also <a href="http://abulafia.mt.ic.ac.uk/shannon/ptable.php">http://abulafia.mt.ic.ac.uk/shannon/ptable.php</a>&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>V.V. Sereda, D.S. Tsvetkov, I.L. Ivanov, A.Yu. Zuev, Interplay between chemical strain, defects and ordering in Sr1-xLaxFeO3 materials, Acta Materialia, 162, 2019, 33-45, <a href="https://doi.org/10.1016/j.actamat.2018.09.051">https://doi.org/10.1016/j.actamat.2018.09.051</a>&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>Vladimir V. Sereda, Dmitry S. Tsvetkov, Dmitry A. Malyshkin, Ivan L. Ivanov, Anton L. Sednev-Lugovets, Andrey Yu. Zuev, Hydration-induced chemical expansion of BaCa(1+y)/3Nb(2−y)/3O3−δ∙xH2O (BCN) and other proton-conducting perovskite oxides, Solid State Ionics, 358, 2020, 115516, <a href="https://doi.org/10.1016/j.ssi.2020.115516">https://doi.org/10.1016/j.ssi.2020.115516</a>&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Zuev A.Y., Tsvetkov D.S. (2017). Conventional Methods for Measurements of Chemo-Mechanical Coupling. In: Bishop, S., Perry, N., Marrocchelli, D., Sheldon, B. (eds) Electro-Chemo-Mechanics of Solids. Electronic Materials: Science &amp; Technology. Springer, Cham. <a href="https://doi.org/10.1007/978-3-319-51407-9_2">https://doi.org/10.1007/978-3-319-51407-9_2</a></p>
+<p>Tsvetkov D.S., Sereda V.V., Malyshkin D.A., Ivanov I.L., Zuev A.Y. Chemical lattice strain in nonstoichiometric oxides: an overview. Journal of Materials Chemistry A. 2022;10(12):6351-75. <a href="https://doi.org/10.1039/D1TA08407K">https://doi.org/10.1039/D1TA08407K</a>&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>The figures in this section are from the Netzsch DIL 409 operation manual.&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Henderson, J.B., Emmerich, W.D. &amp; Wassmer, E. A method for the temperature calibration of pushrod dilatometers. Journal of Thermal Analysis 32, 1905–1913 (1987). <a href="https://doi.org/10.1007/BF01913983">https://doi.org/10.1007/BF01913983</a>&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": true, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

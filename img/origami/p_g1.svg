@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100.29642mm"
+   height="79.999992mm"
+   viewBox="0 0 100.29642 79.999992"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><marker
+       style="overflow:visible"
+       id="ArrowTriangleStylized"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1.5"
+       markerHeight="1.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid"><path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m 6,0 c -3,1 -7,3 -9,5 0,0 0,-4 2,-5 -2,-1 -2,-5 -2,-5 2,2 6,4 9,5 z"
+         id="path4" /></marker><linearGradient
+       id="swatch1"><stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" /></linearGradient></defs><g
+     id="layer1"
+     transform="translate(-3.9058547,-5.0449686)"><g
+       id="g1"><rect
+         style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.527483;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="99.455162"
+         height="79.472511"
+         x="4.1695962"
+         y="5.3087101" /><path
+         style="fill:none;stroke:#000000;stroke-width:0.316192;stroke-dasharray:1.89715, 1.89715;stroke-dashoffset:0"
+         d="M 3.9982439,44.90133 H 103.79014 l -0.20791,-0.187027"
+         id="path8" /><path
+         style="fill:none;stroke:#000000;stroke-width:0.316192;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#ArrowTriangleStylized)"
+         d="m 70.318277,15.164338 c 23.139953,26.95038 10.188977,47.091376 0.207898,59.661006 l -0.207898,-0.187023"
+         id="path9" /><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:0;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+         x="91.019768"
+         y="81.491653"
+         id="text208"><tspan
+           id="tspan208"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:none;stroke-width:0.3;stroke-dasharray:none"
+           x="91.019768"
+           y="81.491653">1.</tspan></text></g></g></svg>
